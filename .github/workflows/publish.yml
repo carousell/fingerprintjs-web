@@ -3,7 +3,7 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the v3 branch
-  push:
+  release:
     branches: [v3]
   # pull_request:
   #   branches: [ master ]
