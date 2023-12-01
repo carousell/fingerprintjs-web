@@ -43,6 +43,8 @@ jobs:
       - run: |
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.FINGERPRINTJS_TOKEN }}" >> .npmrc
           echo "@carousell:registry=https://npm.pkg.github.com" >> .npmrc
+      - run: npm install
+      - run: npm run build
       - run: npm ci --ignore-scripts
       - run: npm publish
         env:
