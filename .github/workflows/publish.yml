@@ -2,9 +2,10 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on release
+  # Triggers the workflow on release of v3 branch
   release:
-    types: [created]
+    types: [published]
+    branches: [v3]
   # pull_request:
   #   branches: [ master ]
 
